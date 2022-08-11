@@ -32,6 +32,12 @@ for i in dbutils.fs.ls('/mnt/raw/autoloader/input'):
 
 # COMMAND ----------
 
+&sql
+
+select * from bronze.crime_patrick
+
+# COMMAND ----------
+
 display(df_final)
 
 # COMMAND ----------
